@@ -3,20 +3,24 @@ import { COLORS } from "../../constants/theme";
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 20,
+    paddingTop: 12,
     marginHorizontal: 20,
   },
   titleContainer: {
-    margin: 10,
+    marginHorizontal: 5,
+    padding: 5,
     backgroundColor: COLORS.lightWhite,
-    height: 150,
-
+    height: 120,
     borderRadius: 20,
   },
   titleColumn: {
     padding: 15,
-    position: "absolute",
-    bottom: 0,
+  },
+  bottom: {
+    paddingHorizontal: 30,
+    backgroundColor: COLORS.lightWhite,
+    height: 90,
+    paddingVertical: 20,
   },
 });
 

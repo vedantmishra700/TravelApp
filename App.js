@@ -12,10 +12,13 @@ import {
   Recommended,
   PlaceDetails,
   HotelDetails,
+  Settings,
+  Payments,
 } from "./screens";
 import BottomTabNavigation from "./navigation/BottomTabNavigation";
 import HotelList from "./screens/details/HotelList";
 import HotelSearch from "./screens/search/HotelSearch";
+import SelectRoom from "./screens/details/SelectRoom";
 
 const Stack = createNativeStackNavigator();
 
@@ -87,6 +90,21 @@ export default function App() {
         <Stack.Screen
           name="HotelSearch"
           component={HotelSearch}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="SelectRoom"
+          component={SelectRoom}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Settings"
+          component={Settings}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Payments"
+          component={Payments}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
